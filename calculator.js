@@ -1,1 +1,3 @@
-alert('hello world')
+function handleOnClick(x) {
+    alert(x);
+}
