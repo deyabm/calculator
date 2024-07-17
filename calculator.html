@@ -5,25 +5,41 @@
     </head>
 
     <body>
-        <div>
-            <output id="screen">0</output>
-            <button onclick="handleOnClick(this.innerText)" type="button">0</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">1</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">2</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">3</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">4</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">5</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">6</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">7</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">8</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">9</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">+</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">-</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">x</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">/</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">.</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">=</button>
-            <button onclick="handleOnClick(this.innerText)" type="button">C</button>
+        <div class="main-div">
+            <div class='buttons-row' id="screen-div">
+                <output id="screen">0</output>
+                <button onclick="handleOnClick(this.innerText)" type="button">C</button>
+            </div>
+            
+            <div id="buttons">
+                <div class="buttons-row">
+                    <button onclick="handleOnClick(this.innerText)" type="button">7</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">8</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">9</button>
+                    <button class="operation" onclick="handleOnClick(this.innerText)" type="button">+</button>
+                </div>
+
+                <div class="buttons-row">
+                    <button onclick="handleOnClick(this.innerText)" type="button">4</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">5</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">6</button>
+                    <button class="operation" onclick="handleOnClick(this.innerText)" type="button">-</button>
+                </div>
+
+                <div class="buttons-row">
+                    <button onclick="handleOnClick(this.innerText)" type="button">1</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">2</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">3</button>
+                    <button class="operation" onclick="handleOnClick(this.innerText)" type="button">x</button>
+                </div>
+
+                <div class="buttons-row">
+                    <button onclick="handleOnClick(this.innerText)" type="button">0</button>
+                    <button onclick="handleOnClick(this.innerText)" type="button">.</button>
+                    <button class="result" onclick="handleOnClick(this.innerText)" type="button">=</button>
+                    <button class="operation" onclick="handleOnClick(this.innerText)" type="button">/</button>
+                </div>
+            </div>
         </div>
 
         <script src="./calculator.js"></script>
